@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68352584-12BB-465D-8AFA-4FF285098C8B}</ProjectGuid>
+    <ProjectGuid>{DE0B6EA2-3833-4062-8BC7-43400EBBD408}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Characters</RootNamespace>
-    <AssemblyName>Characters</AssemblyName>
+    <RootNamespace>RoguelikeRPG</RootNamespace>
+    <AssemblyName>RoguelikeRPG</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
-    <Compile Include="IKeyControllable.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Grid.cs" />
+    <Compile Include="IAttackPower.cs" />
+    <Compile Include="IHP.cs" />
+    <Compile Include="IPos.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="NPC.cs" />
+    <Compile Include="ObjectsList.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="Trap.cs" />
+    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

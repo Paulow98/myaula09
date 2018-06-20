@@ -10,8 +10,8 @@ namespace Characters
     {
         static void Main(string[] args)
         {
-            Player p = new Player();
-            NPC npc = new NPC();
+            Player p = new Player("Kripparian");
+            NPC npc = new NPC("RNG");
 
             for (; ; )
             {

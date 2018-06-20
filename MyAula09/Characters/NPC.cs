@@ -12,7 +12,7 @@ namespace Characters
         public override char Move()
         {
             char tmp = new char();
-            switch (random.Next(0, 3))
+            switch (random.Next(0, 4))
             {
                 case 0:
                     tmp = 'W';
@@ -28,7 +28,7 @@ namespace Characters
                     break;
             }
             return tmp;
-
         }
+        public NPC(string name) : base(name) { }
     }
 }

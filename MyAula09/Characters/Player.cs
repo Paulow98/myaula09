@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Characters
 {
-    class Player : Character
+    class Player : Character, IKeyControllable
     {
-        public override char Move()
+        public char ReadControlKey()
         {
             char tmp = new char();
             bool tmpB;
@@ -35,7 +35,12 @@ namespace Characters
                         break;
                 }
             } while (!tmpB);
-             return tmp;
+            return tmp;
         }
+        public override char Move()
+        {
+             return ReadControlKey();
+        }
+        public Player(string name) : base(name) { }
     }
 }

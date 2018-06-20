@@ -12,5 +12,9 @@ namespace Characters
 
         public string Name { get { return this.name; } }
         public abstract char Move();
+        public Character( string name)
+        {
+            this.name = name;
+        }
     }
 }
